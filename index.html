@@ -17,7 +17,7 @@
     <div class="container-fluid">
 <!-- offcanvas trigger -->
 <button 
-  class="navbar-toggler me-2" 
+  class="navbar-toggler me-3" 
   type="button" 
   data-bs-toggle="offcanvas" 
   data-bs-target="#offcanvasExample" 
@@ -32,7 +32,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="d-flex ms-auto">
-            <div class="input-group">
+            <div class="input-group my-3 my-lg-3">
               <input 
                 type="text" 
                 class="form-control" 
@@ -74,25 +74,21 @@
 <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
   Link with href
 </a>
-<div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div>
-      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-    </div>
-    <div class="dropdown mt-3">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-        Dropdown button
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+<div 
+  class="offcanvas offcanvas-start bg-dark text-white sidebar-nav" 
+  tabindex="-1" 
+  id="offcanvasExample" 
+  aria-labelledby="offcanvasExampleLabel"
+  >
+  
+  <div class="offcanvas-body p-0">
+    <nav class="navbar-dark">
+      <ul class="navbar-nav">
+        <li>
+          <div class="text-muted small fw-bold text-uppercase px-3">CORE</div>
+        </li>
       </ul>
-    </div>
+    </nav>
   </div>
 </div>
 <!-- offcanvas -->
