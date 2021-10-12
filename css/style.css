@@ -13,6 +13,20 @@ body, button {
     width: var(--offcanvas-width);
 }
 
+.sidebar-link {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-link .right-icon {
+    display: inline-flex;
+    transition: all ease 0.25s;
+}
+
+.sidebar-link [aria-expanded="true"] .right-icon {
+    transform: rotate(180deg);
+}
+
 @media(min-width: 992px) {
 
     body {
@@ -21,6 +35,10 @@ body, button {
 
     .offcanvas-backdrop::before {
         display: none;
+    }
+
+    main {
+        margin-left: var(--offcanvas-width);
     }
 
     .sidebar-nav {
